@@ -37,7 +37,7 @@ if add_button:
             count = 0
             count2 = 1
 
-        with open('C:\\Users\\Администратор\\Desktop\\Lab9\\data.csv', encoding='utf-8') as result_file:
+        with open('data.csv', encoding='utf-8') as result_file:
             file_reader = csv.reader(result_file, delimiter = ",")
             for row in file_reader:
                 if row[1] == '1' and row[2] in add_multiselect1 and row[4] in add_multiselect2:
@@ -48,7 +48,7 @@ if add_button:
                     count2 += 1
             count += 1
 else:
-    data = pd.read_csv('C:\\Users\\Администратор\\Desktop\\Lab9\\data.csv')
+    data = pd.read_csv('data.csv')
     st.write(data)
 
 df = pd.DataFrame({
