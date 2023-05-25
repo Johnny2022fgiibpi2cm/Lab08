@@ -44,15 +44,3 @@ else:
         st.success(f"Количество спасенных женщин - {female_saved}")
     else:
         st.error(f"Количество погибших женщин - {female_dead}")
-
-
-
-
-
-
-
-
-
-
-
-
