@@ -27,7 +27,6 @@ with open('data.csv') as file:
 male_saved, male_dead, female_saved, female_dead = get_result(data)
 #print(male_saved, male_dead, female_saved, female_dead)
 
-def Kate_Function():
 #Программа для Стримлит на основе полученных данных
 st.title('Спасенные и погибшие на Титанике')
 st.header('Вариант 8 (Ленская Е.И. группа ПИ-2см)')
