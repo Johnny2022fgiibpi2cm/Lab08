@@ -23,18 +23,6 @@ if select == 'Екатерина':
     st.header('Вариант 8 (Ленская Е.И. группа ПИ-2см)')
     st.subheader('Посчитать количество пассажиров (выбрав пол, и спасенных или погибших)')
     choice = st.radio('Укажите пол:', ['муж', 'жен'])
-    if choice == 'муж':
-        choice = st.radio('Спасен или погиб:', ['спасен', 'погиб'])
-    if choice == 'спасен':
-        st.success(f"Количество спасенных мужчин - {male_saved}")
-    else:
-        st.error(f"Количество погибших мужчин - {male_dead}")
-    else:
-    choice = st.radio('Спасен или погиб:', ['спасен', 'погиб'])
-    if choice == 'спасен':
-        st.success(f"Количество спасенных женщин - {female_saved}")
-    else:
-        st.error(f"Количество погибших женщин - {female_dead}")
 if select == 'Алина':
     test_fare()
     Alina_Function()
