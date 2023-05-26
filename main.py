@@ -3,17 +3,17 @@ import pandas as pd
 import csv
 from Evgeny import *
 from Evgeny_Test import *
-#from Kate import *
 from Alina import *
 from Vadim import *
+from Kate import *
 
 st.title('STREAMLIT PROJECT КОМАНДЫ 2022-ФГиИБ-ПИ-2см')
 st.divider()
 st.subheader('Выберите нужный вариант: ')
 
 select = st.radio('Выберите исполнителя:', ['Екатерина', 'Алина', 'Вадим', 'Евгений'])
-#if select == 'Екатерина':
-#    Kate_Function()
+if select == 'Екатерина':
+    Kate_Function()
 if select == 'Алина':
     test_fare()
     Alina_Function()
