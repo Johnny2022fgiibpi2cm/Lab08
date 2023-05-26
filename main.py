@@ -12,12 +12,12 @@ st.divider()
 st.subheader('Выберите нужный вариант: ')
 
 select = st.radio('Выберите исполнителя:', ['Екатерина', 'Алина', 'Вадим', 'Евгений'])
-if select == 'Екатерина':
-    Kate_Function()
-if select == 'Алина':
-    Alina_Function()
-if select == 'Вадим':
-    Vadim_Function()
+#if select == 'Екатерина':
+#    Kate_Function()
+#if select == 'Алина':
+#    Alina_Function()
+#if select == 'Вадим':
+#    Vadim_Function()
 if select == 'Евгений':
     Testing_Function_1()
     Testing_Function_2()
