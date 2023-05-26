@@ -6,7 +6,7 @@ def Alina_Function():
  st.subheader('Вывести имена пассажиров, стоимость билета которых была выше указанной')
  choice = st.number_input('Укажите стоимость билета')
  if st.button('Показать'):
-    with open("C:\\Users\\Администратор\\Desktop\\Lab9\\data.csv") as file:
+    with open("data.csv") as file:
      for line in file:
          if line.split(",")[10] != 'Cabin':
              fare = float(line.split(",")[10])
