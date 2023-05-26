@@ -15,6 +15,7 @@ select = st.radio('Выберите исполнителя:', ['Екатерин
 #if select == 'Екатерина':
 #    Kate_Function()
 if select == 'Алина':
+    test_fare()
     Alina_Function()
 if select == 'Вадим':
     Vadim_Function()
