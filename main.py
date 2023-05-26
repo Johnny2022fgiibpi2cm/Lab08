@@ -13,7 +13,7 @@ st.subheader('Выберите нужный вариант: ')
 
 select = st.radio('Выберите исполнителя:', ['Екатерина', 'Алина', 'Вадим', 'Евгений'])
 if select == 'Екатерина':
-    Kate_Function()
+    male_saved, male_dead, female_saved, female_dead = get_result(data)
 if select == 'Алина':
     test_fare()
     Alina_Function()
