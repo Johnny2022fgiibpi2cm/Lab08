@@ -3,7 +3,7 @@ import pandas as pd
 import csv
 import time
 
-with open('C:\\Users\\Администратор\\Desktop\\Lab9\\data.csv') as file:
+with open('data.csv') as file:
     data_file = file.readlines()
 
 def Evgeny_Function():
@@ -42,7 +42,7 @@ def Evgeny_Function():
                  List_Sex.append(row.split(",")[5])
                  List_Age.append(row.split(",")[6])
  else:
-     data = pd.read_csv('C:\\Users\\Администратор\\Desktop\\Lab9\\data.csv')
+     data = pd.read_csv('data.csv')
      st.write(data)
 
  df = pd.DataFrame({
