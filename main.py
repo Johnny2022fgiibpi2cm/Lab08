@@ -14,6 +14,10 @@ st.subheader('Выберите нужный вариант: ')
 select = st.radio('Выберите исполнителя:', ['Екатерина', 'Алина', 'Вадим', 'Евгений'])
 if select == 'Екатерина':
     male_saved, male_dead, female_saved, female_dead = get_result(data)
+    test_saved_male()
+    test_saved_female()
+    test_dead_male()
+    test_dead_female()
     #Программа для Стримлит на основе полученных данных
 st.title('Спасенные и погибшие на Титанике')
 st.header('Вариант 8 (Ленская Е.И. группа ПИ-2см)')
