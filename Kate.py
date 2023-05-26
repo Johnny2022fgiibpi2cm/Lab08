@@ -27,20 +27,28 @@ with open('data.csv') as file:
 male_saved, male_dead, female_saved, female_dead = get_result(data)
 #print(male_saved, male_dead, female_saved, female_dead)
 
-#Программа для Стримлит на основе полученных данных
-st.title('Спасенные и погибшие на Титанике')
-st.header('Вариант 8 (Ленская Е.И. группа ПИ-2см)')
-st.subheader('Посчитать количество пассажиров (выбрав пол, и спасенных или погибших)')
-choice = st.radio('Укажите пол:', ['муж', 'жен'])
-if choice == 'муж':
-    choice = st.radio('Спасен или погиб:', ['спасен', 'погиб'])
-    if choice == 'спасен':
-        st.success(f"Количество спасенных мужчин - {male_saved}")
-    else:
-        st.error(f"Количество погибших мужчин - {male_dead}")
-else:
-    choice = st.radio('Спасен или погиб:', ['спасен', 'погиб'])
-    if choice == 'спасен':
-        st.success(f"Количество спасенных женщин - {female_saved}")
-    else:
-        st.error(f"Количество погибших женщин - {female_dead}")
+#1 тест количество спасенных мужчин
+def test_saved_male():
+    data = ['0,0,2,3,4,male', '0,0,2,3,4,male', '0,1,2,3,4,female', '0,1,2,3,4,female']
+    male_saved, male_dead, female_saved, female_dead = get_result(data)
+    assert male_saved == 0
+
+#2 тест количество спасенных женщин
+def test_saved_female():
+    data = ['0,0,2,3,4,male', '0,0,2,3,4,male', '0,1,2,3,4,female', '0,1,2,3,4,female']
+    male_saved, male_dead, female_saved, female_dead = get_result(data)
+    assert female_saved == 2
+
+#3 тест количество погибших мужчин
+def test_dead_male():
+    data = ['0,0,2,3,4,male', '0,0,2,3,4,male', '0,1,2,3,4,female', '0,1,2,3,4,female']
+    male_saved, male_dead, female_saved, female_dead = get_result(data)
+    assert male_dead == 2
+
+#4 тест количество погибших женщин
+def test_dead_female():
+    data = ['0,0,2,3,4,male', '0,0,2,3,4,male', '0,1,2,3,4,female', '0,1,2,3,4,female']
+    male_saved, male_dead, female_saved, female_dead = get_result(data)
+    assert female_dead == 0
+
+
