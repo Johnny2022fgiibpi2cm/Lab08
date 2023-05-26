@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import csv
 from Evgeny import *
+from Kate import *
 from Evgeny_Test import *
 from Alina import *
 from Vadim import *
