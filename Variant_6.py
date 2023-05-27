@@ -1,5 +1,3 @@
-import csv
-
 with open('data.csv') as file:
     data_file = file.readlines()
 
