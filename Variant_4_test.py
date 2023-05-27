@@ -1,4 +1,3 @@
-import streamlit as st
 from Variant_4 import get_fare
 
 def test_fare():
