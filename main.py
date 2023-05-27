@@ -90,17 +90,17 @@ if select == 'Евгений':
                     List_Name.append(row.split(",")[3] + row.split(",")[4] )
                     List_Sex.append(row.split(",")[5])
                     List_Age.append(row.split(",")[6])
-     else:
-         data = pd.read_csv('data.csv')
-         st.write(data)
+      else:
+          data = pd.read_csv('data.csv')
+          st.write(data)
 
-     df = pd.DataFrame({
-             "Pclass": List_Pclass,
-             "Name": List_Name,
-             "Sex": List_Sex,
-             "Age": List_Age
-       })
-     st.dataframe(df)
+      df = pd.DataFrame({
+              "Pclass": List_Pclass,
+              "Name": List_Name,
+              "Sex": List_Sex,
+              "Age": List_Age
+        })
+      st.dataframe(df)
     Testing_Function_1()
     Testing_Function_2()
     Testing_Function_3()
