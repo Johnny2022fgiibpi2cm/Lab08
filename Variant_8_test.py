@@ -1,4 +1,4 @@
-from Variant_8_ import get_result
+from Variant_8 import get_result
 
 #1 тест количество спасенных мужчин
 def test_saved_male():
