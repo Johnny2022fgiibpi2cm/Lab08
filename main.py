@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import csv
 from Variant_6 import *
-from Kate import *
+from Variant_8 import *
 from Variant_6_test import *
 from Variant_4 import *
 from Variant_9 import *
