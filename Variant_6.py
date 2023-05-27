@@ -1,6 +1,3 @@
-with open('data.csv') as file:
-    data_file = file.readlines()
-
 def Result_Function(data_file, Survived, Pclass1, Sex1, Pclass2, Sex2):
     List = []
     for row in data_file:
