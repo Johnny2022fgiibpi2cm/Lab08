@@ -55,5 +55,4 @@ if select == 'Евгений':
     Testing_Function_1()
     Testing_Function_2()
     Testing_Function_3()
-    Evgeny_Function()
 
