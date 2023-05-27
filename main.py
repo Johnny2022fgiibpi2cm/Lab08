@@ -101,7 +101,4 @@ if select == 'Евгений':
             "Age": List_Age
       })
     st.dataframe(df)
-    Testing_Function_1()
-    Testing_Function_2()
-    Testing_Function_3()
 
