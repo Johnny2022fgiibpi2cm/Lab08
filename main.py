@@ -38,8 +38,19 @@ if select == 'Екатерина':
         else:
             st.error(f"Количество погибших женщин - {female_dead}")
 if select == 'Алина':
+     st.title('Титаник')
+     st.header('Вариант 4 (Елисеева А.А. группа ПИ-2см)')
+     st.subheader('Вывести имена пассажиров, стоимость билета которых была выше указанной')
+     choice = st.number_input('Укажите стоимость билета')
+     if st.button('Показать'):
+      with open("data.csv") as file:
+       for line in file:
+         if line.split(",")[10] != 'Cabin':
+             fare = float(line.split(",")[10])
+             name = line.split(",")[3] + line.split(",")[4]
+             if fare >= choice:
+               st.text(f"{name[1:-1]}{fare}")
     test_fare()
-    Alina_Function()
 if select == 'Вадим':
     Vadim_Function()
 if select == 'Евгений':
