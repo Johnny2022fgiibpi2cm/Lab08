@@ -16,6 +16,6 @@ def get_result(data):
                 female_dead += 1
     return male_saved, male_dead, female_saved, female_dead
 
-#Вывели файл Титаник из функции
-#with open('data.csv') as file:
-#    data = file.readlines()
+
+with open('data.csv') as file:
+    data = file.readlines()
