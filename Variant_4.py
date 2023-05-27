@@ -10,8 +10,8 @@ def get_fare(data):
  return res
 
 with open("data.csv") as file:
- data = file.readlines()
-print(get_fare(data))
+    data = file.readlines()
+    print(get_fare(data))
 
 
 
