@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import csv
-import time
 
 with open('data.csv') as file:
     data_file = file.readlines()
