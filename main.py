@@ -3,7 +3,7 @@ import pandas as pd
 import csv
 from Variant_6 import *
 from Kate import *
-from Evgeny_Test import *
+from Variant_6_test import *
 from Alina import *
 from Variant_9 import *
 
