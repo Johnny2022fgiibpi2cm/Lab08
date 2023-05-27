@@ -1,3 +1,5 @@
+import csv
+
 def get_fare(data):
  choice = 32
  res = []
