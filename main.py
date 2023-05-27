@@ -51,7 +51,7 @@ if select == 'Алина':
                 if fare >= choice:
                   st.text(f"{name[1:-1]}{fare}")
 if select == 'Вадим':
-    Vadim_Function()
+    st.subheader('Мой модуль еще в разработке...')
 if select == 'Евгений':
     Testing_Function_1()
     Testing_Function_2()
