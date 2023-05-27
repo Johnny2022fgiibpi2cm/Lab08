@@ -2,9 +2,11 @@ import streamlit as st
 import pandas as pd
 import csv
 from Variant_6 import *
-from Variant_8 import *
 from Variant_6_test import *
+from Variant_8 import *
+from Variant_8_test import *
 from Variant_4 import *
+from Variant_4_test import *
 from Variant_9 import *
 
 st.title('STREAMLIT PROJECT КОМАНДЫ 2022-ФГиИБ-ПИ-2см')
