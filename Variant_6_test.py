@@ -1,4 +1,4 @@
-from Variant_6 import Result_Function
+from Variant6 import Result_Function
 
 #Test Survived = 1, Pclass = 2, Sex = male
 def Testing_Function_1():
