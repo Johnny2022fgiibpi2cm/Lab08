@@ -1,7 +1,3 @@
-import streamlit as st
-import csv
-
-#Функция не зависит от файла Титаник
 def get_result(data):
     male_saved = 0
     male_dead = 0
