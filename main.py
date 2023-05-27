@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import csv
 import time
-from variant6 import *
-from variant6_test import *
+from Variant_6 import *
+from Variant_6_test import *
 from Variant_8_ import *
 from Variant_8_test_ import *
 from Variant_4_ import *
