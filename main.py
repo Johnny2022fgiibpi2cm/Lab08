@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import csv
+import time
 from Variant_6 import *
 from Variant_6_test import *
 from Variant_8 import *
@@ -53,7 +54,7 @@ if select == 'Вадим':
     st.subheader('Мой модуль еще в разработке...')
 if select == 'Евгений':
     with open('data.csv') as file:
-    data_file = file.readlines()
+        data_file = file.readlines()
 
     df = {}
     List_Pclass = []; List_Name = []; List_Sex = []; List_Age = []
