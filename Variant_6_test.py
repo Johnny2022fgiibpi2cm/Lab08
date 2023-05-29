@@ -5,9 +5,7 @@ def Testing_Function_1():
     test = ['0, 1, 2, "Williams Mr.Charles Eugene", male, ',
             '1, 1, 2, "Beesley Mr.Lawrence", male, 34',
             '2, 1, 2, "Becker Master.Richard F", male, 1']
-     a = 3
-     assert a == 3
-    #assert Result_Function(test, '1', '2', 'male', '0', '0') == ['"Williams Mr.Charles Eugene", male, ',
+    assert Result_Function(test, '1', '2', 'male', '0', '0') == ['"Williams Mr.Charles Eugene", male, ',
                                                        '"Beesley Mr.Lawrence", male, 34',
                                                        '"Becker Master.Richard F", male, 1']
 
