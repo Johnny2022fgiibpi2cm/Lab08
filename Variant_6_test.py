@@ -3,7 +3,7 @@ from Variant_6 import Result_Function
 def f():
     return 7
 
-def Testing_Function():
+def d():
     assert f() == 7
 
 '''
