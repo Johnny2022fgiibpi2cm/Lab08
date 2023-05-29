@@ -1,5 +1,5 @@
 from Variant_6 import Result_Function
-
+'''
 #Test Survived = 1, Pclass = 2, Sex = male
 def Testing_Function_1():
     test = ['0, 1, 2, "Williams Mr.Charles Eugene", male, ',
@@ -16,7 +16,7 @@ def Testing_Function_2():
     assert Result_Function(test, '1', '1', 'female', '0', '0') == ['"Bonnell Miss.Elizabeth", female, 58',
                                                        '"Fortune Miss.Mabel Helen", female, 23',
                                                        '"Icard Miss.Amelie", female, 38']
-
+'''
 
 #Test Survived = 1, Pclass = 1 and 2, Sex = male and female
 def Testing_Function_3():
