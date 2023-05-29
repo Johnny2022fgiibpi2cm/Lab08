@@ -1,6 +1,6 @@
-'''from Variant_6 import Result_Function
+from Variant_6 import Result_Function
 
-#Test Survived = 1, Pclass = 2, Sex = male
+'''#Test Survived = 1, Pclass = 2, Sex = male
 def Testing_Function_1():
     test = ['0, 1, 2, "Williams Mr.Charles Eugene", male, ',
             '1, 1, 2, "Beesley Mr.Lawrence", male, 34',
@@ -32,8 +32,4 @@ def Testing_Function_3():
                                                        '"Bonnell Miss.Elizabeth", female, 58',
                                                        '"Fortune Miss.Mabel Helen", female, 23',
                                                        '"Icard Miss.Amelie", female, 38'] '''
-from Variant_4 import get_fare
 
-def test_fare():
-    data = ['0,1,2,.Грейнджер, Гермиона.,5,6,7,8,9,56', '0,1,2,/Поттер, Гарри.,5,6,7,8,9,5', '0,1,2,-Уизли, Рон.,5,6,7,8,9,31']
-    assert get_fare(data) == ['Грейнджер Гермиона']
