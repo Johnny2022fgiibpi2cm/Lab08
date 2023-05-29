@@ -1,4 +1,5 @@
 from Variant_6 import Result_Function
+import pytest
 
 def some_data():
     return 42
