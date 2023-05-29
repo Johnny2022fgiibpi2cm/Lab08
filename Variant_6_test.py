@@ -1,9 +1,9 @@
 #from Variant_6 import Result_Function
 def f():
-    return 7
+    return 3
 
 def d():
-    assert f() == 7
+    assert f() == 4
 
 '''
 #Test Survived = 1, Pclass = 2, Sex = male
