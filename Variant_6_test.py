@@ -1,8 +1,9 @@
 from Variant_6 import Result_Function
-assert 1==1
-'''#Test Survived = 1, Pclass = 2, Sex = male
+
+#Test Survived = 1, Pclass = 2, Sex = male
 def Testing_Function_1():
-    test = ['0, 1, 2, "Williams Mr.Charles Eugene", male, ',
+    assert 1==1
+ '''   test = ['0, 1, 2, "Williams Mr.Charles Eugene", male, ',
             '1, 1, 2, "Beesley Mr.Lawrence", male, 34',
             '2, 1, 2, "Becker Master.Richard F", male, 1']
     answer = Result_Function(test, '1', '2', 'male', '0', '0')
