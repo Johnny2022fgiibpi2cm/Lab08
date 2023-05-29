@@ -1,10 +1,10 @@
 from Variant_6 import Result_Function
 
 def f():
-    return 3
+    return ['"Williams Mr.Charles Eugene", male, ', '"Beesley Mr.Lawrence", male, 34', '"Becker Master.Richard F", male, 1']
 
 def Testing_Function():
-    assert f() == 3
+    assert f() == ['"Williams Mr.Charles Eugene", male, ', '"Beesley Mr.Lawrence", male, 34', '"Becker Master.Richard F", male, 1']
 
 '''
 #Test Survived = 1, Pclass = 2, Sex = male
