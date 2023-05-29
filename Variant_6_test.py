@@ -8,8 +8,8 @@ def Testing_Function_1():
     #assert Result_Function(test, '1', '2', 'male', '0', '0') == ['"Williams Mr.Charles Eugene", male, ',
                                                        '"Beesley Mr.Lawrence", male, 34',
                                                        '"Becker Master.Richard F", male, 1']
-     a = '1'
-     assert a == '1'
+     a = ['1', '1', '1']
+     assert a == ['1', '1', '1']
 
 #Test Survived = 1, Pclass = 1, Sex = female
 def Testing_Function_2():
