@@ -4,7 +4,7 @@ def f():
     return ['"Williams Mr.Charles Eugene", male, ', '"Beesley Mr.Lawrence", male, 34', '"Becker Master.Richard F", male, 1']
 
 
-def test_function():
+def test_function1():
     assert f() == ['"Williams Mr.Charles Eugene", male, ', '"Beesley Mr.Lawrence", male, 34', '"Becker Master.Richard F", male, 1']
 
 '''
