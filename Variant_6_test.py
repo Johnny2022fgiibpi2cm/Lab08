@@ -5,9 +5,8 @@ def Testing_Function_1():
     test = ['0, 1, 2, "Williams Mr.Charles Eugene", male, ',
             '1, 1, 2, "Beesley Mr.Lawrence", male, 34',
             '2, 1, 2, "Becker Master.Richard F", male, 1']
-    assert Result_Function(test, '1', '2', 'male', '0', '0') == ['"Williams Mr.Charles Eugene", male, ',
-                                                       '"Beesley Mr.Lawrence", male, 34',
-                                                       '"Becker Master.Richard F", male, 1']
+    answer = Result_Function(test, '1', '2', 'male', '0', '0')
+    assert answer == ['"Williams Mr.Charles Eugene", male, ', '"Beesley Mr.Lawrence", male, 34', '"Becker Master.Richard F", male, 1']
 
 #Test Survived = 1, Pclass = 1, Sex = female
 def Testing_Function_2():
