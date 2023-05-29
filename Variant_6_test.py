@@ -9,6 +9,12 @@ def Result_Function(data_file, Survived, Pclass1, Sex1, Pclass2, Sex2):
             List.append(row.split(",")[3].strip() + ', ' + row.split(",")[4].strip() + ', ' + row.split(",")[5].strip())
     return List
 
+def function1():
+    return 77
+
+def func():
+    assert function1() == 77
+
 #Test Survived = 1, Pclass = 2, Sex = male
 def Testing_Function_1():
     test = ['0, 1, 2, "Williams Mr.Charles Eugene", male, ',
