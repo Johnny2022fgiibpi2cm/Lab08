@@ -1,6 +1,7 @@
 from Variant_6 import Result_Function
 import pytest
 
+@pytest.fixture()
 def some_data():
     return 42
 
