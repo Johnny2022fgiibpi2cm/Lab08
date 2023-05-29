@@ -9,10 +9,9 @@ def test_function1():
     '1, 1, 2, "Beesley Mr.Lawrence", male, 34',
     '2, 1, 2, "Becker Master.Richard F", male, 1']
     assert f() == ['"Williams Mr.Charles Eugene", male, ', '"Beesley Mr.Lawrence", male, 34', '"Becker Master.Richard F", male, 1']
-
-'''
+    
 #Test Survived = 1, Pclass = 2, Sex = male
-def Testing_Function_1():
+def test_function2():
     test = ['0, 1, 2, "Williams Mr.Charles Eugene", male, ',
             '1, 1, 2, "Beesley Mr.Lawrence", male, 34',
             '2, 1, 2, "Becker Master.Richard F", male, 1']
@@ -42,5 +41,5 @@ def Testing_Function_3():
                                                        '"Becker Master.Richard F", male, 1',
                                                        '"Bonnell Miss.Elizabeth", female, 58',
                                                        '"Fortune Miss.Mabel Helen", female, 23',
-                                                       '"Icard Miss.Amelie", female, 38']'''
+                                                       '"Icard Miss.Amelie", female, 38']
 
