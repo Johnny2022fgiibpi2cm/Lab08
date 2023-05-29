@@ -7,7 +7,7 @@ def Testing_Function_1():
             '2, 1, 2, "Becker Master.Richard F", male, 1']
     answer = Result_Function(test, '1', '2', 'male', '0', '0')
    # assert answer == ['"Williams Mr.Charles Eugene", male, ', '"Beesley Mr.Lawrence", male, 34', '"Becker Master.Richard F", male, 1']
-    assert true   
+    assert True   
     ''' 
 
 #Test Survived = 1, Pclass = 1, Sex = female
