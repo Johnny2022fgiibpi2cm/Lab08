@@ -1,17 +1,7 @@
 from Variant_6 import Result_Function
-'''
-def f():
-    return ['"Williams Mr.Charles Eugene", male, ', '"Beesley Mr.Lawrence", male, 34', '"Becker Master.Richard F", male, 1']
-
+ 
 #Test Survived = 1, Pclass = 2, Sex = male
 def test_function1():
-    test = ['0, 1, 2, "Williams Mr.Charles Eugene", male, ',
-    '1, 1, 2, "Beesley Mr.Lawrence", male, 34',
-    '2, 1, 2, "Becker Master.Richard F", male, 1']
-    assert f() == ['"Williams Mr.Charles Eugene", male, ', '"Beesley Mr.Lawrence", male, 34', '"Becker Master.Richard F", male, 1']
-'''   
-#Test Survived = 1, Pclass = 2, Sex = male
-def test_function2():
     test = ['0, 1, 2, "Williams Mr.Charles Eugene", male, ',
             '1, 1, 2, "Beesley Mr.Lawrence", male, 34',
             '2, 1, 2, "Becker Master.Richard F", male, 1']
@@ -19,7 +9,7 @@ def test_function2():
     assert answer == ['"Williams Mr.Charles Eugene", male, ', '"Beesley Mr.Lawrence", male, 34', '"Becker Master.Richard F", male, 1']
 
 #Test Survived = 1, Pclass = 1, Sex = female
-def Testing_Function_2():
+def test_function2():
     test = ['0, 1, 1, "Bonnell Miss.Elizabeth", female, 58',
             '1, 1, 1, "Fortune Miss.Mabel Helen", female, 23',
             '2, 1, 1, "Icard Miss.Amelie", female, 38']
@@ -29,7 +19,7 @@ def Testing_Function_2():
 
 
 #Test Survived = 1, Pclass = 1 and 2, Sex = male and female
-def Testing_Function_3():
+def test_function3():
     test = ['0, 1, 2, "Williams Mr.Charles Eugene", male, ',
             '1, 1, 2, "Beesley Mr.Lawrence", male, 34',
             '2, 1, 2, "Becker Master.Richard F", male, 1',
