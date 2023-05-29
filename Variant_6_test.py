@@ -1,11 +1,10 @@
-from Variant_6 import Result_Function
+#from Variant_6 import Result_Function
+def f():
+    return 3
 
-def avg(ranks):
-    assert len(ranks) != 0
-    return round(sum(ranks)/len(ranks), 2)
+def test_function():
+    assert f() == 4
 
-ranks = [62, 65, 75]
-print("Среднее значение:", avg(ranks))
 '''
 #Test Survived = 1, Pclass = 2, Sex = male
 def Testing_Function_1():
