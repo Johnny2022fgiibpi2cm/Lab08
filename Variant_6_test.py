@@ -1,9 +1,19 @@
 from Variant_6 import Result_Function
 
+def some_data():
+        """Return answer to ultimate question."""
+        return 42
+
+def test_some_data(some_data):
+        """Use fixture return value in a test."""
+        assert some_data == 42
+
+
+'''
 #Test Survived = 1, Pclass = 2, Sex = male
 def Testing_Function_1():
-    assert 1==1
- '''   test = ['0, 1, 2, "Williams Mr.Charles Eugene", male, ',
+
+    test = ['0, 1, 2, "Williams Mr.Charles Eugene", male, ',
             '1, 1, 2, "Beesley Mr.Lawrence", male, 34',
             '2, 1, 2, "Becker Master.Richard F", male, 1']
     answer = Result_Function(test, '1', '2', 'male', '0', '0')
