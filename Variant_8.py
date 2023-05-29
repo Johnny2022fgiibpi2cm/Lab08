@@ -15,7 +15,3 @@ def get_result(data):
             else:
                 female_dead += 1
     return male_saved, male_dead, female_saved, female_dead
-
-
-#with open('data.csv') as file:
-#    data = file.readlines()
