@@ -2,7 +2,7 @@
 def f():
     return 3
 
-def d():
+def dasdasdasdasd():
     assert f() == 4
 
 '''
