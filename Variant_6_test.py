@@ -1,5 +1,4 @@
-from Variant_6 import Result_Function
-
+#from Variant_6 import Result_Function
 def f():
     return 7
 
