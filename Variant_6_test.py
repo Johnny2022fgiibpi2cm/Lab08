@@ -1,5 +1,5 @@
 from Variant_6 import Result_Function
- assert 1==1
+assert 1==1
 '''#Test Survived = 1, Pclass = 2, Sex = male
 def Testing_Function_1():
     test = ['0, 1, 2, "Williams Mr.Charles Eugene", male, ',
