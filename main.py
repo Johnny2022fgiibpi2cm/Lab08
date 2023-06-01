@@ -4,8 +4,8 @@ import csv
 import time
 from Variant_6 import *
 from Variant_6_test import *
-from Variant_8 import *
-from Variant_8_test import *
+from Variat_8 import *
+from Variat_8_test import *
 from Variant__4 import *
 from Variant__4_test import *
 
