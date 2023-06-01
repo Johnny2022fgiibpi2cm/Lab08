@@ -47,7 +47,7 @@ if select == 'Алина':
                 if fare >= choice:
                   st.text(f"{name[1:-1]}{fare}")
 if select == 'Вадим':
-    st.subheader('Мой модуль еще в разработке...')
+    st.title('Вариант №9. Вадим Фаилович')
 if select == 'Евгений':
     with open('data.csv') as file:
         data_file = file.readlines()
