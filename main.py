@@ -48,6 +48,7 @@ if select == 'Алина':
                   st.text(f"{name[1:-1]}{fare}")
 if select == 'Вадим':
     st.title('Вариант №9. Вадим Фаилович')
+    st.success('Задание. ПОСЧИТАТЬ ДОЛЮ ВЫЖИВШИХ ВОЗРАСТНЫХ ГРУППАХ "ДО 30 ЛЕТ" И "СТАРШЕ 60"')
 if select == 'Евгений':
     with open('data.csv') as file:
         data_file = file.readlines()
