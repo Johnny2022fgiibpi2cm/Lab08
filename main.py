@@ -49,6 +49,7 @@ if select == 'Алина':
 if select == 'Вадим':
     st.title('Вариант №9. Вадим Фаилович')
     st.success('Задание. ПОСЧИТАТЬ ДОЛЮ ВЫЖИВШИХ ВОЗРАСТНЫХ ГРУППАХ "ДО 30 ЛЕТ" И "СТАРШЕ 60"')
+    choice = st.radio('Выберите возрастную группу:', ['до 30 лет', 'старше 60 лет'])
 if select == 'Евгений':
     with open('data.csv') as file:
         data_file = file.readlines()
