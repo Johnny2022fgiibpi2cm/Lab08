@@ -1,8 +1,5 @@
 def saved_pass(data):
-    male_saved = 0
-    male_dead = 0
-    female_saved = 0
-    female_dead = 0
+    saved_male_30 = 0, saved_female_30 = 0, saved_male_60 = 0, saved_female_60 = 0;
     #for line in data:
     #    if line.split(',')[5] == 'male':
     #        if line.split(',')[1] == '1':
