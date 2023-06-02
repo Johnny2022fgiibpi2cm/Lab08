@@ -57,7 +57,7 @@ if select == 'Вадим':
     if choice == 'до 30 лет':
         st.success(f"Всего пассажиров: {count_30}, Всего выживших пассажиров: {saved_30}")
     elif choice == 'старше 60 лет':
-        st.success(f"Всего пассажиров: {count_60}, Всего выживших пассажиров:" {saved_60}")
+        st.success(f"Всего пассажиров: {count_60}, Всего выживших пассажиров: {saved_60}")
 if select == 'Евгений':
     with open('data.csv') as file:
         data_file = file.readlines()
