@@ -55,7 +55,7 @@ if select == 'Вадим':
         data = file.readlines()
     saved_30, saved_60, count_30, count_60 = saved_pass(data)
     if choice == 'до 30 лет':
-        st.success(f"Всего пассажиров: {count_30}, "f"Всего выживших пассажиров: {saved_30}")
+        st.success(f"Всего пассажиров: {count_30}, f"Всего выживших пассажиров: {saved_30}")
     elif choice == 'старше 60 лет':
         st.success(f"Всего пассажиров: {count_60}, f"Всего выживших пассажиров: {saved_60}")
 if select == 'Евгений':
