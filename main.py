@@ -60,7 +60,7 @@ if select == 'Вадим':
         st.success(f"Доля выживших пассажиров: {round(result_30, 3)}%")
     elif choice == 'старше 60 лет':
         st.success(f"Всего пассажиров: {count_60}, Всего выживших пассажиров: {saved_60}")
-        result_60 =  saved_60 * 100 / count_30
+        result_60 =  saved_60 * 100 / count_60
         st.success(f"Доля выживших пассажиров: {round(result_60, 3)}%")
 if select == 'Евгений':
     with open('data.csv') as file:
