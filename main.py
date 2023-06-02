@@ -56,7 +56,8 @@ if select == 'Вадим':
     saved_30, saved_60, count_30, count_60 = saved_pass(data)
     if choice == 'до 30 лет':
         st.success(f"Всего пассажиров: {count_30}, Всего выживших пассажиров: {saved_30}")
-        st.success(f"Доля выживших пассажиров: {(count_30 * saved_30)/ 100%}")
+        result_30 = (count_30 * saved_30)/ 100 
+        st.success(f"Доля выживших пассажиров: {result_30}")
     elif choice == 'старше 60 лет':
         st.success(f"Всего пассажиров: {count_60}, Всего выживших пассажиров: {saved_60}")
 if select == 'Евгений':
