@@ -53,11 +53,11 @@ if select == 'Вадим':
     choice = st.radio('Выберите возрастную группу:', ['до 30 лет', 'старше 60 лет'])
     with open('data.csv') as file:
         data = file.readlines()
-    saved_30, saved_60 = saved_pass(data)
+    saved_30, saved_60, count_30, count_60 = saved_pass(data)
     if choice == 'до 30 лет':
-        st.success(f"Всего выживших пассажиров: {saved_30}")
+        st.success(f"Всего пассажиров: {count_30}, "f"Всего выживших пассажиров: {saved_30}")
     elif choice == 'старше 60 лет':
-        st.success(f"Всего выживших пассажиров: {saved_60}")
+        st.success(f"Всего пассажиров: {count_60}, f"Всего выживших пассажиров: {saved_60}")
 if select == 'Евгений':
     with open('data.csv') as file:
         data_file = file.readlines()
