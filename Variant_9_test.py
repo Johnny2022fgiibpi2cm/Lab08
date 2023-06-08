@@ -1,54 +1,35 @@
-import streamlit as st
-import pandas as pd
-import csv
-import time
+from Variant_9 import Result_Function
+ 
+#Test Survived = 1, Pclass = 2, Sex = male
+def test_function1():
+    test = ['0, 1, 2, "Williams Mr.Charles Eugene", male, ',
+            '1, 1, 2, "Beesley Mr.Lawrence", male, 34',
+            '2, 1, 2, "Becker Master.Richard F", male, 1']
+    answer = Result_Function(test, '1', '2', 'male', '0', '0')
+    assert answer == ['"Williams Mr.Charles Eugene", male, ', '"Beesley Mr.Lawrence", male, 34', '"Becker Master.Richard F", male, 1']
 
-with open('C:\\Users\\Администратор\\Desktop\\Lab9\\data.csv') as file:
-    data_file = file.readlines()
+#Test Survived = 1, Pclass = 1, Sex = female
+def test_function2():
+    test = ['0, 1, 1, "Bonnell Miss.Elizabeth", female, 58',
+            '1, 1, 1, "Fortune Miss.Mabel Helen", female, 23',
+            '2, 1, 1, "Icard Miss.Amelie", female, 38']
+    assert Result_Function(test, '1', '1', 'female', '0', '0') == ['"Bonnell Miss.Elizabeth", female, 58',
+                                                       '"Fortune Miss.Mabel Helen", female, 23',
+                                                       '"Icard Miss.Amelie", female, 38']
 
-def Evgeny_Function():
- df = {}
- List_Pclass = []; List_Name = []; List_Sex = []; List_Age = []
- warning = ''
 
- st.title('Hey, it is my project TITANIC')
- st.divider()
- st.subheader('My name: Evgeny. My group: 2022-FGiIB-PI-2SM ')
- st.success('Вариант-6. Вывести Name, Sex, Age спасенных пассижиров указанного класса и пола.')
+#Test Survived = 1, Pclass = 1 and 2, Sex = male and female
+def test_function3():
+    test = ['0, 1, 2, "Williams Mr.Charles Eugene", male, ',
+            '1, 1, 2, "Beesley Mr.Lawrence", male, 34',
+            '2, 1, 2, "Becker Master.Richard F", male, 1',
+            '0, 1, 1, "Bonnell Miss.Elizabeth", female, 58',
+            '1, 1, 1, "Fortune Miss.Mabel Helen", female, 23',
+            '2, 1, 1, "Icard Miss.Amelie", female, 38']
+    assert Result_Function(test, '1', '1', 'male', '2', 'female') == ['"Williams Mr.Charles Eugene", male, ',
+                                                       '"Beesley Mr.Lawrence", male, 34',
+                                                       '"Becker Master.Richard F", male, 1',
+                                                       '"Bonnell Miss.Elizabeth", female, 58',
+                                                       '"Fortune Miss.Mabel Helen", female, 23',
+                                                       '"Icard Miss.Amelie", female, 38']
 
- with st.sidebar:
-     add_multiselect1 = st.multiselect(
-         'Выберите класс пассажира',
-         ['1', '2', '3'])
-
- with st.sidebar:
-     add_multiselect2 = st.multiselect(
-         'Выберите пол пассажира',
-         ['male', 'female'])
-     add_button = st.button('показать')
-
- if add_button:
-     if not add_multiselect1 or not add_multiselect2:
-         st.error('Заданы не все данные условия!')
-     else:
-         with st.spinner('Загрузка...'):
-             time.sleep(5)
-             st.success('Данные загружены!')
-
-         for row in data_file:
-             if row.split(",")[1] == '1' and row.split(",")[2] in add_multiselect1 and row.split(",")[5] in add_multiselect2:
-                 List_Pclass.append(row.split(",")[2])
-                 List_Name.append(row.split(",")[3] + row.split(",")[4] )
-                 List_Sex.append(row.split(",")[5])
-                 List_Age.append(row.split(",")[6])
- else:
-     data = pd.read_csv('C:\\Users\\Администратор\\Desktop\\Lab9\\data.csv')
-     st.write(data)
-
- df = pd.DataFrame({
-         "Pclass": List_Pclass,
-         "Name": List_Name,
-         "Sex": List_Sex,
-         "Age": List_Age
-     })
- st.dataframe(df)
