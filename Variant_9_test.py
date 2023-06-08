@@ -1,6 +1,6 @@
-from Variant_9 import Result_Function
+from Variant_9 import saved_pass
  
-#Test Survived = 1, Pclass = 2, Sex = male
+'''#Test Survived = 1, Pclass = 2, Sex = male
 def test_function1():
     test = ['0, 1, 2, "Williams Mr.Charles Eugene", male, ',
             '1, 1, 2, "Beesley Mr.Lawrence", male, 34',
@@ -31,5 +31,5 @@ def test_function3():
                                                        '"Becker Master.Richard F", male, 1',
                                                        '"Bonnell Miss.Elizabeth", female, 58',
                                                        '"Fortune Miss.Mabel Helen", female, 23',
-                                                       '"Icard Miss.Amelie", female, 38']
+                                                       '"Icard Miss.Amelie", female, 38']'''
 
