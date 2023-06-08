@@ -9,6 +9,7 @@ from Variat_8_test import *
 from Variant__4 import *
 from Variant__4_test import *
 from Variant_9 import *
+from Variant_9_test import *
 
 st.title('STREAMLIT PROJECT КОМАНДЫ 2022-ФГиИБ-ПИ-2см')
 st.divider()
